@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: #cc78ede5;
+    color: white;
+    width: 200px;
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li:hover {
+    background-color: #b86ad6e5;
+}
+.indicator{
+    position: absolute;
+    top: 10%;
+}
+#ghostText{
+    animation: ghost 2s forwards;
+}
+@keyframes ghost {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1 ;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+    
+}
